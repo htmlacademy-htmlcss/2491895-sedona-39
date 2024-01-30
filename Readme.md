@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерий Мащенко](https://up.htmlacademy.ru/htmlcss/39/user/2491895).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
