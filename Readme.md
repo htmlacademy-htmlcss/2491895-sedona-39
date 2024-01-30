@@ -2,7 +2,7 @@
 
 * Студент: [Валерий Мащенко](https://up.htmlacademy.ru/htmlcss/39/user/2491895).
 * Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
-
+*Сайт: [Мой проект Седона](https://valera566.github.io/2491895-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
