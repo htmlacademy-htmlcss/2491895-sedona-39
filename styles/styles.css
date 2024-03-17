@@ -155,7 +155,7 @@ body {
   justify-content: flex-end;
   min-width: 132px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .navigation-user .navigation-user-link {
@@ -231,8 +231,6 @@ body {
   width: 20px;
   height: 20px;
   padding: 5px 5px 5px 4px;
-
-
 }
 
 .header-button {
@@ -241,6 +239,7 @@ body {
   height: 36px;
   padding: 8px 34px;
   background-color: #756157;
+  margin-left: 20px;
 }
 
 .header-button:hover, .header-button:focus {
@@ -298,7 +297,6 @@ body {
 }
 
 .advantages-lead {
-
   margin: 0;
   margin-bottom: 25px;
   font-size: 30px;
@@ -478,7 +476,7 @@ body {
   background-repeat: no-repeat;
   width: 75px;
   height: 76px;
-  margin: 78px auto 30px auto;
+  margin: 78px 168px 30px 168px;
 }
 
 .service-title {
@@ -697,7 +695,7 @@ body {
 }
 
 .filters {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 77px 70px;
   background-color: #2d4a6b;
   background: url("../images/catalog/filter.jpg");
   background-repeat: no-repeat;
@@ -805,12 +803,16 @@ body {
   box-sizing: border-box;
 }
 
+.catalog-products {
+  margin-bottom: 57px;
+}
+
 .sorting-container {
   display: flex;
   align-items: center;
   max-width: 1060px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .control {
@@ -966,7 +968,7 @@ body {
 }
 
 .filter-range-toggle-max {
-  right: -5px;
+  right: -13px;
 }
 
 .catalog-filters-list {
@@ -983,6 +985,8 @@ body {
   flex-direction: column;
   justify-content: end;
   gap: 32px;
+  margin-bottom: -8px;
+  margin-left: 2px;
 }
 
 .button-submit {
@@ -1326,6 +1330,7 @@ body {
   background-color: rgb(242, 242, 242 , 0.8);
   z-index: 2;
 }
+
 .modal-container-close {
   display: none;
 }
