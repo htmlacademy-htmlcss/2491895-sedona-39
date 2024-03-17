@@ -28,11 +28,19 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link-search" href="#">
+              <svg class="navigation-icon-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <path
+                  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-favourites" href="#">
+            <a class="navigation-link-favourites navigation-link-favourites-icon" href="#">
+              <svg class="navigation-icon-favourites" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <path
+                  d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
               <span class="visually-hidden">Избранное</span>
               <span class="navigation-user-number">12</span>
             </a>
@@ -168,7 +176,8 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
-          <svg class="modal-close-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="modal-close-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"
               fill="#000" />
@@ -178,13 +187,29 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="check-in-date-control" for="check-in-date">Дата заезда:</label>
+            <label class="check-in-date-control" for="check-in-date">Дата Заезда:</label>
             <input class="input-check-in-date" id="check-in-date" type="text" name="check-in-date" value="2020-04-27"
               required>
+            <svg class="calendar-icon-in-date" width="16" height="15" viewBox="0 0 16 15"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+              <path
+                d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" />
+              <path
+                d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+            </svg>
             <p class="check-in-date-text">Мы не можем отправить вас в прошлое.</p>
-            <label class="check-out-date-control" for="check-out-date">Дата выезда:</label>
+            <label class="check-out-date-control" for="check-out-date">Дата Выезда:</label>
             <input class="input-check-out-date" id="check-out-date" type="text" name="check-out-date" value="2023-09-01"
               required>
+            <svg class="calendar-icon-out-date" width="16" height="15" viewBox="0 0 16 15"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+              <path
+                d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" />
+              <path
+                d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+            </svg>
             <p class="check-out-date-text">На эти даты есть свободные номера. Пока есть.</p>
             <label class="adults-control" for="adults-control">Взрослые:</label>
             <div class="adults-control-wrapper">
@@ -197,9 +222,8 @@
               <input class="input-control-person" id="adults-control" type="text" name="adults-control" value="2"
                 required>
               <button class="modal-control-button-plus" type="button">
-                <svg class="modal-plus" width="14" height="14" viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                <svg class="modal-plus" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                 </svg>
               </button>
             </div>
@@ -229,9 +253,8 @@
               <input class="input-control-person" id="children-control" type="text" name="children-control" value="2"
                 required>
               <button class="modal-control-button-plus" type="button">
-                <svg class="modal-plus" width="14" height="14" viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                <svg class="modal-plus" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                 </svg>
               </button>
             </div>
