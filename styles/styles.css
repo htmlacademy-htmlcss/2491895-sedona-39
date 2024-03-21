@@ -96,7 +96,6 @@ img {
 
 .page-header {
   display: flex;
-  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   min-height: 64px;
