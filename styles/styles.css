@@ -40,6 +40,11 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -72,8 +77,7 @@ body {
   line-height: 36px;
   background-color: #756157;
   border-radius: 4px;
-  width: 376px;
-  height: 52px;
+  padding: 8px 50px;
 }
 
 .search-button:hover, .search-button:focus {
@@ -92,6 +96,7 @@ body {
 
 .page-header {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   min-height: 64px;
@@ -107,6 +112,14 @@ body {
   margin-right: 30px;
   margin-bottom: -10px;
   z-index: 1;
+}
+
+.navigation-logo:hover, .navigation-logo:focus {
+  opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
 }
 
 .navigation-link {
@@ -139,8 +152,6 @@ body {
   height: 2px;
   background-color: #756257;
 }
-
-
 
 .navigation-list {
   display: flex;
@@ -235,8 +246,6 @@ body {
 
 .header-button {
   align-self: center;
-  width: 160px;
-  height: 36px;
   padding: 8px 34px;
   background-color: #756157;
   margin-left: 20px;
@@ -266,7 +275,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 51px;
-
 }
 
 .hero::after {
@@ -353,7 +361,6 @@ body {
   left: 56px;
   bottom: -32px;
   background-color: rgba(255, 255, 255, 0.3) ;
-
 }
 
 .advantages-title {
@@ -466,7 +473,6 @@ body {
   width: 75px;
   height: 72px;
   margin: 81px auto 30px auto;
-
 }
 
 .service-title-present::before {
@@ -578,13 +584,16 @@ body {
   background-color: #f2f2f2;
 }
 
+.newsletter-form-field:hover, .newsletter-form-field:focus {
+  background-color: #e6e6e6;
+}
+
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-
 }
 
 .newsletter-button:hover, .newsletter-button:focus {
@@ -708,7 +717,6 @@ body {
   width: 494px;
   margin: 0;
   padding: 0;
-
   padding-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
@@ -819,6 +827,7 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+  line-height: 23px;
 }
 
 .control-mark {
@@ -831,6 +840,10 @@ body {
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
+}
+
+.control-label {
+  line-height: 23px;
 }
 
 .control:hover .control-mark {
@@ -1052,13 +1065,22 @@ body {
   color: #333333;
   background-color: #ffffff;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-image: url("../images/catalog/arrow-to-down.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
 }
 
+.select-control:hover {
+  border: 2px solid #68a2ca;
+}
 
+.select-control:disabled {
+  border: 2px solid rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .view-buttons {
   display: flex;
@@ -1083,6 +1105,18 @@ body {
   border-radius: 4px;
 }
 
+.view-button-link:hover {
+  border: 2px solid #000000;
+}
+
+.view-button-link:focus {
+  outline: 2px solid #83b3d3;
+}
+
+.view-button-link:active {
+  border: 2px solid #000000;
+}
+
 .view-button-link-active {
   border: 2px solid #000000;
 }
@@ -1103,9 +1137,7 @@ body {
   width: 1060px;
   height: 1px;
   background-color: #e6e6e6;
-
   bottom: -40px;
-
 }
 
 .product-card {
@@ -1122,12 +1154,14 @@ body {
 .product-card-link {
   grid-column: 1 / -1;
   text-decoration: none;
-  width: max-content;
+}
+
+.product-card-link:hover, .product-card-link:focus {
+  opacity: 0.6;
 }
 
 .product-card-img {
   display: block;
-
 }
 
 .product-card-title {
@@ -1320,6 +1354,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.newsletter-form-field-catalog:hover, .newsletter-form-field-catalog:focus {
+  background-color: #e6e6e6;
+}
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1421,11 +1459,15 @@ body {
   font-weight: 700;
 }
 
-.calendar-icon-in-date {
-  position: absolute;
-  fill: rgb(117, 97, 87, 0.3);
-  top: 180px;
-  right: 92px;
+.input-check-in-date:hover, .input-check-in-date:focus {
+  background-color: #e6e6e6;
+}
+
+.icon-input {
+  background-image: url(../images/modal/calendar-modal.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px 20px;
 }
 
 .calendar-icon-in-date:hover,
@@ -1460,6 +1502,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.input-check-out-date:hover, .input-check-out-date:focus {
+  background-color: #e6e6e6;
 }
 
 .calendar-icon-out-date {
