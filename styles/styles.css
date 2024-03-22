@@ -704,7 +704,7 @@ img {
 }
 
 .filters {
-  padding: 35px 70px 77px 70px;
+  padding: 35px 70px 72px 70px;
   background-color: #2d4a6b;
   background: url("../images/catalog/filter.jpg");
   background-repeat: no-repeat;
@@ -998,8 +998,8 @@ img {
   flex-direction: column;
   justify-content: end;
   gap: 32px;
-  margin-bottom: -8px;
-  margin-left: 2px;
+  margin-bottom: -3px;
+  margin-left: 3px;
 }
 
 .button-submit {
